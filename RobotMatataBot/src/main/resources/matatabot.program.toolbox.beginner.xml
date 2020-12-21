@@ -1,0 +1,119 @@
+<toolbox_set id="toolboxBeginner" style="display: none">
+  <category name="TOOLBOX_ACTION" svg="true">
+    <block type="matatabotActions_motion_forward_step">
+      <field name="STEP">1 step</field>
+    </block>
+    <block type="matatabotActions_motion_backward_step">
+      <field name="STEP">1 step</field>
+    </block>
+    <block type="matatabotActions_motion_turn_left_angle">
+      <field name="ANGLE">90°</field>
+    </block>
+    <block type="matatabotActions_motion_turn_right_angle">
+      <field name="ANGLE">90°</field>
+    </block>
+    <block type="matatabotActions_motion_wheel_power">
+      <field name="ANGLE">90°</field>
+    </block>
+    <block type="matatabotActions_motion_stop_moving">
+      <field name="WHEEL">both wheels</field>
+    </block>
+    <block type="matatabotActions_do_dance"></block>
+    <block type="matatabotActions_do_action"></block>
+    <block type="matatabotActions_sound_song"></block>
+    <block type="matatabotActions_led_single_set1">
+      <field name="WHEEL">both wheels</field>
+    </block>     
+    <block type="matatabotActions_led_single_set2">
+      <value name="COLOR">
+        <block type="robColour_picker">
+          <field name="COLOUR">#FF1493</field>
+        </block>
+      </value>
+    </block>
+    <block type="matatabotActions_led_all_off"></block>
+  </category>
+  <category name="TOOLBOX_CONTROL" svg="true">
+    <block type="robControls_if"/>
+    <block type="robControls_ifElse"/>
+    <block type="controls_repeat_ext">
+      <value name="TIMES">
+        <block type="math_number">
+          <field name="NUM">10</field>
+        </block>
+      </value>
+    </block>
+    <block type="robControls_wait_time">
+      <value name="WAIT">
+        <block type="math_number">
+          <field name="NUM">500</field>
+        </block>
+      </value>
+    </block>
+    <block type="robControls_wait_for">
+      <value name="WAIT0">
+        <block type="logic_boolean">
+          <field name="BOOL">TRUE</field>
+        </block>
+      </value>
+    </block>
+  </category>
+  <category name="TOOLBOX_LOGIC" svg="true">
+    <block type="logic_compare"/>
+    <block type="logic_operation"/>
+    <block type="logic_boolean"/>
+  </category>
+  <category name="TOOLBOX_MATH" svg="true">
+    <block type="math_number"/>
+    <block type="math_arithmetic"/>
+    <block type="math_random_int">
+      <value name="FROM">
+        <block type="math_number">
+          <field name="NUM">1</field>
+        </block>
+      </value>
+      <value name="TO">
+        <block type="math_number">
+          <field name="NUM">100</field>
+        </block>
+      </value>
+    </block>
+  </category>
+  <category name="TOOLBOX_TEXT" svg="true">
+    <block type="text"/>
+    <block type="text_comment"/>
+  </category>
+  <category name="TOOLBOX_COLOUR" svg="true">
+    <block type="robColour_picker">
+      <field name="COLOUR">#FF1493</field>
+    </block>
+    <block type="robColour_picker">
+      <field name="COLOUR">#800080</field>
+    </block>
+    <block type="robColour_picker">
+      <field name="COLOUR">#4876FF</field>
+    </block>
+    <block type="robColour_picker">
+      <field name="COLOUR">#00FFFF</field>
+    </block>
+    <block type="robColour_picker">
+      <field name="COLOUR">#90EE90</field>
+    </block>
+    <block type="robColour_picker">
+      <field name="COLOUR">#008000</field>
+    </block>
+    <block type="robColour_picker">
+      <field name="COLOUR">#FFFF00</field>
+    </block>
+    <block type="robColour_picker">
+      <field name="COLOUR">#FFA500</field>
+    </block>
+    <block type="robColour_picker">
+      <field name="COLOUR">#FF0000</field>
+    </block>
+    <block type="robColour_picker">
+      <field name="COLOUR">#FFFFFE</field>
+    </block>
+  </category>
+  <category name="TOOLBOX_VARIABLE" custom="VARIABLE" svg="true"/>
+</toolbox_set>

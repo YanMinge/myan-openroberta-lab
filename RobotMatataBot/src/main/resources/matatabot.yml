@@ -1,0 +1,22 @@
+include: "classpath:/robotCommon.yml"
+block:
+  MATATABOT_MOTION_FORWARD_STEP :
+      category: ACTOR
+      implementor: de.fhg.iais.roberta.syntax.action.MatataBotMotionForwardStep
+      type: [matatabotActions_motion_forward_step]
+  MATATABOT_MOTION_BACKWARD_STEP :
+      category: ACTOR
+      implementor: de.fhg.iais.roberta.syntax.action.MatataBotMotionBackwardStep
+      type: [matatabotActions_motion_backward_step]
+  MATATABOT_MOTION_TURN_LEFT_ANGLE :
+      category: ACTOR
+      implementor: de.fhg.iais.roberta.syntax.action.MatataBotMotionTurnLeftAngle
+      type: [matatabotActions_motion_turn_left_angle]
+  MATATABOT_MOTION_TURN_RIGHT_ANGLE :
+      category: ACTOR
+      implementor: de.fhg.iais.roberta.syntax.action.MatataBotMotionTurnRightAngle
+      type: [matatabotActions_motion_turn_right_angle]
+  MATATABOT_MOTION_MOVING :
+      category: ACTOR
+      implementor: de.fhg.iais.roberta.syntax.action.MatataBotMotionMoving
+      type: [matatabotActions_motion_moving]
